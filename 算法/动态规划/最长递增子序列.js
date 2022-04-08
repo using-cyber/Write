@@ -1,0 +1,6 @@
+/**
+ * 
+ */
+ var lengthOfLIS = function(nums) {
+
+};
