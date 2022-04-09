@@ -3,8 +3,8 @@
  *  1. 建立二维数组填充为0 （二维数组不仅要包括每个值还要添加为0的项）
  *  2. 判断是否相等  同时为了取最大值 要把所有数字进行填充
  */
- 
-var longestCommonSubsequence = function(text1, text2) {
+
+var longestCommonSubsequence = function (text1, text2) {
     const m = text1.length, n = text2.length;
     // 需要大于字符串长度
     const dp = new Array(m + 1).fill(0).map(() => new Array(n + 1).fill(0));

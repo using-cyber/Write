@@ -3,7 +3,7 @@
  * 2. 当大于下一个数时不着急push进去
  * 3. 判断条件替换
  */
- var merge = function (intervals) {
+var merge = function (intervals) {
     const res = [];
     //  ！！ 排序
     intervals.sort((a, b) => a[0] - b[0])
@@ -14,7 +14,7 @@
         if (prev[1] >= cur[0]) {
             prev[1] = Math.max(prev[1], cur[1])
             //  先进行替换再push
-        }else{
+        } else {
             res.push(prev)
             // ！！ 替换
             prev = cur

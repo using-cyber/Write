@@ -1,3 +1,3 @@
-var maxProfit = function(prices) {
+var maxProfit = function (prices) {
 
 };

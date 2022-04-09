@@ -1,6 +1,6 @@
 /**
  * 
  */
- var lengthOfLIS = function(nums) {
+var lengthOfLIS = function (nums) {
 
 };

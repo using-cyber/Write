@@ -3,13 +3,13 @@
  * 需要判断当只有自身的情况
  */
 var longestCommonPrefix = function (strs) {
-    if(strs.length == 1) return strs[0];
+    if (strs.length == 1) return strs[0];
     let res = strs[0]
-    for(let i=1;i<strs.length;i++){
+    for (let i = 1; i < strs.length; i++) {
         // ！！ j<res.length 因为长度大于第一个字符串则没有比较的意义
-        for(let j = 0;j<res.length;j++){
-            if(res[j] !== strs[i][j]){
-                res = res.slice(0,j)
+        for (let j = 0; j < res.length; j++) {
+            if (res[j] !== strs[i][j]) {
+                res = res.slice(0, j)
                 break;
             }
         }

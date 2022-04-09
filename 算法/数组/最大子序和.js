@@ -5,17 +5,17 @@
  * cur一直累加直到cur小于0 将cur重新赋值 
  * 只有新的cur的值大于前一个cur大的值才会进行替换
  */
- var maxSubArray = function(nums) {
+var maxSubArray = function (nums) {
     let cur = 0
     let res = -Infinity
     // ！！  选择负无穷大的值
-    for(const num of nums){
+    for (const num of nums) {
         cur += num
-        if(cur >res) {
+        if (cur > res) {
             res = cur
         }
         // ！！ 有更大的值需要取代
-        if(cur <0){
+        if (cur < 0) {
             cur = 0
         }
     }
